@@ -1,0 +1,61 @@
+<?php
+	include('head.php');
+    include('style.php');
+?>
+<section style="background-color: #fff!important">
+	
+	<div class="container">
+        <div class="row titulo">
+            <h2><i class="fa fa-user-plus" aria-hidden="true"></i> Añadir Nuevo Producto</a></h2>
+        </div>
+        <form method="post" action="php/agregar_servicio.php" enctype="multipart/form-data">
+            <div class="row">
+                <div class="col-md-4 col-sm-12">                   
+                    <label>Nombre del producto:</label><br>
+                    <textarea name="nombre_serv" class="form-control" style="width: 100%;height:100px"></textarea><br><br>
+                </div>
+                <div class="col-md-4 col-sm-12">
+                    <label>Sub Nombre del producto:</label><br>
+                    <textarea name="subnombre_serv" class="form-control" style="width: 100%;height:100px"></textarea><br><br>
+                </div>
+                <div class="col-md-4 col-sm-12">
+                    <label>Descripción del producto:</label><br>
+                    <textarea name="desc_serv" class="form-control" style="width: 100%;height:100px"></textarea><br><br>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4">
+                    <label>Imagen 1:</label><br>
+                    <input type="file" name="fot1_serv" class="form-control" accept="image/x-png,image/gif,image/jpeg"><br><br>
+                </div>
+                <div class="col-md-4">
+                   <label>Imagen 2:</label><br>
+                    <input type="file" name="fot2_serv" class="form-control" accept="image/x-png,image/gif,image/jpeg"><br><br>
+                </div>
+                <div class="col-md-4">
+                    <label>Imagen 3:</label><br>
+                    <input type="file" name="fot3_serv" class="form-control" accept="image/x-png,image/gif,image/jpeg"><br><br>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4">
+                    <label>Imagen 4:</label><br>
+                    <input type="file" name="fot4_serv" class="form-control" accept="image/x-png,image/gif,image/jpeg"><br><br>
+                </div>
+                <div class="col-md-4">
+                    <label>Caracteristicas del producto:</label><br>
+                    <input type="file" name="fot_caractserv" class="form-control" accept="image/x-png,image/gif,image/jpeg"><br><br>
+                </div>
+                <div class="col-md-4">
+                    <label>Código del producto:</label><br>
+                    <input type="text" name="nuevoCodigo" id="nuevoCodigo" readonly style="width: 100%"><br><br>
+                    <button class="btn" style="padding: 10px 15px!important; background: #0e0e0e; color: #fff" type="submit">Añadir Nuevo Producto</button>
+                </div>
+            </div>
+        </form>
+	</div><br><br>
+</section> 
+
+<?php
+	include('footer.php');
+?>		
